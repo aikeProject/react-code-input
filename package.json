@@ -1,5 +1,5 @@
 {
-  "name": "react-code-input",
+  "name": "react-code-input-cy",
   "version": "3.9.1",
   "description": "React component for entering and validating numbers, text or password.",
   "main": "dist/ReactCodeInput.js",
