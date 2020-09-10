@@ -1,3 +1,13 @@
+#### 3.9.1 (2020-09-10)
+
+##### Documentation Changes
+
+* **next-js:**  added usage instructions with next.js ([e8b3daad](https://github.com/40818419/react-code-input/commit/e8b3daad4d7002f75bb5554f7e19fcbe135a1d24))
+
+##### Refactors
+
+*  add "types" to package.json ([#101](https://github.com/40818419/react-code-input/pull/101)) ([ac9833de](https://github.com/40818419/react-code-input/commit/ac9833dea17a80a1d046e9e1449fa9a7caacab64))
+
 #### 3.8.1 (2018-11-02)
 
 ##### Documentation Changes
