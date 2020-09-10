@@ -51,12 +51,7 @@ class ReactCodeInput extends Component {
       },
     };
 
-    for (let i = 0; i < Number(this.state.fields); i += 1) {
-      if (i < 32) {
-        const value = this.state.value[i] || '';
-        this.state.input.push(value);
-      }
-    }
+    this.state.input = this.setInputArray(this.state.value);
 
     this.textInput = [];
 
@@ -68,7 +63,20 @@ class ReactCodeInput extends Component {
       isValid: nextProps.isValid,
       value: nextProps.value,
       disabled: nextProps.disabled,
+      input: this.setInputArray(nextProps.value),
     });
+  }
+
+  setInputArray(propsValue) {
+    propsValue = propsValue || '';
+    const input = [];
+    for (let i = 0; i < Number(this.state.fields); i += 1) {
+      if (i < 32) {
+        const value = propsValue[i] || '';
+        input.push(value);
+      }
+    }
+    return input;
   }
 
   handleBlur(e) {
